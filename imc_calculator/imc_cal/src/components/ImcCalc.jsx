@@ -13,12 +13,12 @@ const ImcCalc = ({ calcImc }) => {
   };
 
   const handleHeightChange = (e) => {
-    const updatedValue = e.target.value.substr(0, 4); // Limita a 4 caracteres
+    const updatedValue = e.target.value.substr(0, 4);
     setHeight(updatedValue);
   };
 
   const handleWeightChange = (e) => {
-    const updatedValue = e.target.value.substr(0, 4); // Limita a 4 caracteres
+    const updatedValue = e.target.value.substr(0, 4);
     setWeight(updatedValue);
   };
 
@@ -37,7 +37,7 @@ const ImcCalc = ({ calcImc }) => {
                 placeholder="Exemplo 1,75"
                 onChange={(e) => handleHeightChange(e)}
                 value={height}
-                maxLength={4} // Limita a 4 caracteres
+                maxLength={4}
               />
             </div>
             <div className="form-control">
@@ -49,7 +49,7 @@ const ImcCalc = ({ calcImc }) => {
                 placeholder="Exemplo 70,5"
                 onChange={(e) => handleWeightChange(e)}
                 value={weight}
-                maxLength={4} // Limita a 4 caracteres
+                maxLength={4}
               />
             </div>
           </div>
